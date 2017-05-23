@@ -1,0 +1,12 @@
+<!--world.component.html-->
+
+<p>
+  world works!
+</p>
+<ul class = "list">
+  <li *ngFor = "let phrase of list" (click) = "onSelect(phrase)">{{phrase.value}}</li>
+</ul>
+
+<div *ngIf = "selectLang">
+  selected language: {{selectLang}}
+</div>
